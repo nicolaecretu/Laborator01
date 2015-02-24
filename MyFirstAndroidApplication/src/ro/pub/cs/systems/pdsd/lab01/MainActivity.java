@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 			greetingTextView.setText(greetingTextView.getText().toString().replace("xxx", "\n"+userNameEditText.getText()));
 			
 			
-			lphaAnimation fadeEffect = new AlphaAnimation(1.0f, 0.0f);
+			AlphaAnimation fadeEffect = new AlphaAnimation(1.0f, 0.0f);
 			fadeEffect.setDuration(TRANSPARENCY_EFFECT_DURATION);
 			fadeEffect.setFillAfter(true);
 			greetingTextView.setAnimation(fadeEffect);
